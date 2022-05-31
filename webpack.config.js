@@ -4,7 +4,13 @@ module.exports = {
     entry: './src/app.ts',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/'
+    },
+    devServer: {
+        static: __dirname,
+        host: '0.0.0.0',
+        port: 8080
     },
     devtool: 'inline-source-map',
     module: {
