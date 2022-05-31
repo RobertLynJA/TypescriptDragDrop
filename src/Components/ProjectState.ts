@@ -1,6 +1,6 @@
-import { State } from './State.js';
-import { Project } from './Project.js';
-import { ProjectStatus } from '../enums/ProjectStatus.js';
+import { State } from './State';
+import { Project } from './Project';
+import { ProjectStatus } from '../enums/ProjectStatus';
 
 export class ProjectState extends State<Project> {
     private projects: Project[] = [];
