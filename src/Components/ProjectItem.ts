@@ -17,8 +17,6 @@ export class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> impl
 
         this.configure();
         this.renderContent();
-
-        console.log('x');
     }
 
     @autobind
